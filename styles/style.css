@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-image: url("/styles/img/car-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  min-height: 100vh;
+}
+
+nav {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+nav .logo {
+  font-size: 2rem;
+}
+
+nav .logo span {
+  text-transform: capitalize;
+  margin-left: .5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: capitalize;
+}
+
+nav ul li a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+nav .burger {
+  display: none;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.container h1 {
+  text-transform: capitalize;
+  color: #00c2ff;
+  margin-bottom: 2rem;
+}
+
+.container p {
+  margin-bottom: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  background-color: #00c2ff;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  padding: 2rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li p {
+  margin-top: .6rem;
+}
+
+footer ul li span {
+  color: #00c2ff;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    width: 100vw;
+  }
+  nav .logo {
+    font-size: 1.7rem;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+  nav ul li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  nav ul .highlight {
+    display: none;
+  }
+  nav .burger {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 100vw;
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer li {
+    margin: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  nav {
+    width: 100vw;
+  }
+  nav ul {
+    overflow: hidden;
+  }
+  nav ul .highlight {
+    display: none;
+  }
+  .container {
+    width: 100vw;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
